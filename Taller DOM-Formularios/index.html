@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <h1>Taller DOM y Formulario</h1>
+
+    <main>
+        <section>
+            <h2>Parrafos</h2>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga recusandae, perferendis quaerat obcaecati ab dignissimos! Dolorem omnis neque qui nam praesentium consequatur, quidem eligendi ab cum reprehenderit quo vero exercitationem?</p>
+            <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam distinctio modi ipsa ex ratione dolorum iste nostrum! Quos, natus eos nihil ex tempora omnis fugit id eum blanditiis! Ipsum?</p>
+            <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam minus, laudantium perferendis unde eaque rerum esse molestias, dolores iste eveniet error nam necessitatibus reiciendis asperiores facilis modi commodi doloremque.</p>
+            <button onclick="cambiarEstilosParrafos()">Cambiar estilos de párrafos</button>
+            <button onclick="estilizarParrafosPares()">Aplicar estilo a párrafos pares</button>
+            <button onclick="estilizarParrafosImpares()">Aplicar estilo a párrafos impares</button>
+            <button onclick="mostrarImagenes()">Mostrar imágenes</button>
+            <button onclick="ocultarImagenes()">Ocultar imágenes</button>
+            <button onclick="cambiarFondoPagina()">Cambiar fondo de página</button>
+            <button onclick="cambiarColoresTitulos()">Cambiar colores de títulos</button>
+        </section>
+        <h2>Formulario</h2>
+        <div class="formDiv">
+            <form id="formulario">
+                <label for="">Nombre</label> <br>
+                <input type="text" id="nombre" placeholder="Alejandro">
+                <label for="">Apellido</label> <br>
+                <input type="text" id="apellido" placeholder="Gutiérrez">
+                <label for="">Edad</label> <br>
+                <input type="number" id="edad">
+                <label for="">Email</label> <br>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="resultado"></div>
+        <div id="imagenes"></div>
+        <script src="acciones.js"></script>
+    </main>
+
+</body>
+</html>
